@@ -3,12 +3,13 @@
   "version": "1.0.0",
   "license": "MIT",
   "type": "module",
+  "scripts": {},
   "keywords": [
     "katnip-plugin"
   ],
-  "description": "Animations for your Katalyx project, such as a carousel and flip book.",
+  "description": "Animations for your Katalyx project, such as a carousel and a flip book.",
   "dependencies": {
-    "katnip-components": "^3.0.40",
+    "katnip-components": "^3.0.41",
     "react-pageflip": "^2.0.3",
     "use-feather": "^1.0.3"
   },
