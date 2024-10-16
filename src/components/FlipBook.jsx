@@ -1,7 +1,7 @@
 import HtmlFlipBook from "react-pageflip";
 import {useRef, useState} from "react";
 import {useElementDimensions} from "../utils/react-util.jsx";
-import {useExpandChildren, useComponentLibrary, useVar} from "katnip-components";
+import {useExpandChildren, useComponentLibrary, useVarExpr} from "katnip-components";
 import {useFeather} from "use-feather";
 
 const SHADOW_LG="0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);";
@@ -11,7 +11,7 @@ export function FlipBook({children, logicPageWidth, pageAspectRatio, frontPage, 
 		pageColor="#fff";
 
 	children=useExpandChildren(children);
-	let spreadIndexVar=useVar(spreadIndex);
+	let spreadIndexVar=useVarExpr(spreadIndex);
 	let componentLibrary=useComponentLibrary();
 	let FrontPage=componentLibrary[frontPage];
 	let BackPage=componentLibrary[backPage];

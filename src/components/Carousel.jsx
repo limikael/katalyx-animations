@@ -1,7 +1,7 @@
 import {useElementDimensions} from "../utils/react-util.jsx"
 import {useRef} from "react";
 import {useFeather} from "use-feather";
-import {useExpandChildren, useVar, useVal} from "katnip-components";
+import {useExpandChildren, useVarExpr} from "katnip-components";
 
 export function Carousel({indexVar, children}) {
 	children=useExpandChildren(children);
@@ -9,7 +9,7 @@ export function Carousel({indexVar, children}) {
 	let innerRef=useRef();
 	let dimensions=useElementDimensions(containerRef);
 	let feather=useFeather(v=>innerRef.current.style.transform=`translateX(${v}px)`);
-	let pageIndex=useVal(indexVar);
+	let pageIndex=useVarExpr(indexVar).get();
 	if (!pageIndex)
 		pageIndex=0;
 
