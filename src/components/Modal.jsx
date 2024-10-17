@@ -116,7 +116,14 @@ export function Modal({children, block}) {
 
 Modal.editorPreview=({children})=><div>{children}</div>;
 Modal.category="Animation";
-//Modal.materialSymbol="import_contacts";
+Modal.materialSymbol="domain_verification";
 Modal.containerType="children";
-Modal.controls={
+Modal.envSpec=(props,envSpec)=>{
+	return ({
+		show: {type: "action"},
+		hide: {type: "action"},
+		confirm: {type: "action"}
+	});
 }
+Modal.controls={
+};
