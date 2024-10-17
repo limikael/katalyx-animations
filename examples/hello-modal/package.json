@@ -1,0 +1,19 @@
+{
+  "name": "hello-modal",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "start": "katnip dev",
+    "dev": "katnip dev",
+    "postinstall": "katnip init",
+    "cfdev": "katnip cfdev",
+    "deploy": "katnip cfdeploy"
+  },
+  "type": "module",
+  "version": "1.0.0",
+  "dependencies": {
+    "katalyx-animations": "^1.0.1",
+    "katnip-twentytwentyfour": "^3.0.73"
+  },
+  "exports": {}
+}
