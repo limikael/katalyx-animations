@@ -50,6 +50,7 @@ export function Carousel({indexVar, children}) {
 Carousel.editorPreview=({children})=><div>{children}</div>;
 Carousel.category="Animation";
 Carousel.materialSymbol="view_carousel";
+Carousel.containerType="children";
 Carousel.controls={
 	indexVar: {type: "var"},
 }
